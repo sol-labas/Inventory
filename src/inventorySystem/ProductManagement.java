@@ -23,10 +23,22 @@ public class ProductManagement {
     } 
     public Product addProduct(String name){
         try{
-            String sql = "INSERT INTO product (name) VALUES (?)";
-            PreparedStatement stmt = conn.prepareStatement(sql);
+            String sql = "INSERT INTO products (name) VALUES (?)";
+            PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             stmt.setString(1, name);
-            Integer id = stmt.executeUpdate("", Statement.RETURN_GENERATED_KEYS);
+            Integer id = 0;
+            Integer affectedRows = stmt.executeUpdate();
+            if (affectedRows == 0) {
+                return null;
+            }
+
+            ResultSet generatedKeys = stmt.getGeneratedKeys();
+            if (generatedKeys.next()) {
+                id = generatedKeys.getInt(1);
+            }
+            else {
+                throw new SQLException("Creating user failed, no ID obtained.");
+            }
             stmt.close();
             return getProductById(id);
         } catch(SQLException ex){
@@ -40,6 +52,22 @@ public class ProductManagement {
             String sql = "SELECT * FROM products WHERE id = ?";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1, id);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                Integer productId = rs.getInt("id");
+                String productName = rs.getString("name");
+                return new Product(productId, productName);
+            }
+        } catch(SQLException ex){
+            ex.printStackTrace();
+        }
+        return null;
+    }
+    public Product getProductByName(String name) {
+        try {    
+            String sql = "SELECT * FROM products WHERE name = ?";
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, name);
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
                 Integer productId = rs.getInt("id");
@@ -78,9 +106,9 @@ public class ProductManagement {
             stmt.setInt(1, product.getId());
             stmt.setInt(2, quantity);
             stmt.setDouble(3, cost);
-            stmt.setLong(4, timestamp.getTime());
+            stmt.setTimestamp(4, timestamp);
             stmt.setInt(5, user.getId());
-            Integer id = stmt.executeUpdate("", Statement.RETURN_GENERATED_KEYS);
+            stmt.executeUpdate();
             stmt.close();
         } catch(SQLException ex){
             ex.printStackTrace();

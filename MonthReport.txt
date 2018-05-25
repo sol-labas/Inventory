@@ -1,0 +1,6 @@
+Action	Date	Product	Quantity	Price	User
+Buy	15/05/18	Test1	x1	$1.0	admin
+Buy	15/05/18	Mouse	x10	$3.0	admin
+Buy	25/05/18	Chair	x100	$10.0	admin
+Buy	25/05/18	Table	x10	$20.0	admin
+Sell	25/05/18	Table	x1	$5.0	admin
