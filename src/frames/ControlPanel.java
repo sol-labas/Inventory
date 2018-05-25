@@ -52,6 +52,7 @@ public class ControlPanel extends javax.swing.JFrame {
         jList = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Control Panel");
 
         jLabel1.setText("  Please, choose from following option  ");
 

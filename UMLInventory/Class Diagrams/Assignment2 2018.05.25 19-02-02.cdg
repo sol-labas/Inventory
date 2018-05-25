@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Assignment2">
+  <ClassDiagramComponents>
+    <Class name="AddProduct" package="frames" visibility="public" xPosition="1845.0" yPosition="1307.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jErrorMsg" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jName" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPrice" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jQuantity" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jReturn" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jReturnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChangeProduct" package="frames" visibility="public" xPosition="1156.0" yPosition="113.0">
+      <Fields>
+        <Field name="jBuy" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jErrorMsg" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPrice" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jProduct" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jQuantity" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jReturn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jSell" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jSellActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jReturnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBuyActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ControlPanel" package="frames" visibility="public" xPosition="154.0" yPosition="1307.0">
+      <Fields>
+        <Field name="jAddProduct" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jChangeProduct" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jList" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jMonthReport" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jWeekReport" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jWeekReportActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jAddProductActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jChangeProductActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMonthReportActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jListActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InventorySystem" package="frames" visibility="public" xPosition="1689.0" yPosition="421.0">
+      <Fields>
+        <Field name="bUser" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="bUserActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListProduct" package="frames" visibility="public" xPosition="310.0" yPosition="1578.0">
+      <Fields>
+        <Field name="jList" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jReturn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jReturnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LoginUser" package="frames" visibility="public" xPosition="843.0" yPosition="1886.0">
+      <Fields>
+        <Field name="bSubmit" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jCheckBoxMenuItem1" type="javax.swing.JCheckBoxMenuItem" visibility="private"/>
+        <Field name="jErrorMsg" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLogin" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPassword" type="javax.swing.JPasswordField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jLoginActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="bSubmitActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MonthReport" package="frames" visibility="public" xPosition="100.0" yPosition="1000.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jMonthReport" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jReturn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jSave" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jSavedLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jReturnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jSaveActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WeekReport" package="frames" visibility="public" xPosition="1689.0" yPosition="1578.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jReturn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jSave" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jSavedLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jWeekReport" type="javax.swing.JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jReturnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jSaveActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Admin" package="inventorySystem" visibility="public" xPosition="549.0" yPosition="220.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="int" name="userId"/>
+          <Argument type="String" name="userName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="canAddData" returnType="boolean" visibility="public"/>
+        <Method name="canReport" returnType="boolean" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Execution" package="inventorySystem" visibility="public" xPosition="843.0" yPosition="113.0">
+      <Fields>
+        <Field name="dbUrl" type="String" visibility="package" isStatic="true"/>
+        <Field name="uname" type="String" visibility="package" isStatic="true"/>
+        <Field name="pw" type="String" visibility="package" isStatic="true"/>
+        <Field name="conn" type="Connection" visibility="public" isStatic="true"/>
+        <Field name="loggedUser" type="User" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Product" package="inventorySystem" visibility="public" xPosition="1450.0" yPosition="1779.0">
+      <Fields>
+        <Field name="id" type="Integer" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProductFlowReport" package="inventorySystem" visibility="public" xPosition="1845.0" yPosition="692.0">
+      <Fields>
+        <Field name="product" type="String" visibility="private"/>
+        <Field name="quantity" type="Integer" visibility="private"/>
+        <Field name="cost" type="Double" visibility="private"/>
+        <Field name="user" type="String" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Date" name="date"/>
+          <Argument type="String" name="product"/>
+          <Argument type="Integer" name="quantity"/>
+          <Argument type="Double" name="cost"/>
+          <Argument type="String" name="user"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="setDate" returnType="void" visibility="public">
+          <Argument type="Date" name="date"/>
+        </Method>
+        <Method name="getUser" returnType="String" visibility="public"/>
+        <Method name="setUser" returnType="void" visibility="public">
+          <Argument type="String" name="user"/>
+        </Method>
+        <Method name="getProduct" returnType="String" visibility="public"/>
+        <Method name="setProduct" returnType="void" visibility="public">
+          <Argument type="String" name="product"/>
+        </Method>
+        <Method name="getQuantity" returnType="Integer" visibility="public"/>
+        <Method name="setQuantity" returnType="void" visibility="public">
+          <Argument type="Integer" name="quantity"/>
+        </Method>
+        <Method name="getCost" returnType="Double" visibility="public"/>
+        <Method name="setCost" returnType="void" visibility="public">
+          <Argument type="Double" name="cost"/>
+        </Method>
+        <Method name="getFormattedDate" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ProductManagement" package="inventorySystem" visibility="public" xPosition="310.0" yPosition="421.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Connection" name="dbconn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addProduct" returnType="Product" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getProductById" returnType="Product" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+        <Method name="getProductByName" returnType="Product" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getProductList" returnType="HashMap&lt;Integer, Product&gt;" visibility="public"/>
+        <Method name="changeProduct" returnType="void" visibility="public">
+          <Argument type="Product" name="product"/>
+          <Argument type="Integer" name="quantity"/>
+          <Argument type="Double" name="cost"/>
+          <Argument type="Date" name="addDate"/>
+          <Argument type="User" name="user"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Report" package="inventorySystem" visibility="public" xPosition="1156.0" yPosition="1886.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Connection" name="dbconn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="allTotals" returnType="ArrayList&lt;Totals&gt;" visibility="public"/>
+        <Method name="weekReport" returnType="ArrayList&lt;ProductFlowReport&gt;" visibility="public"/>
+        <Method name="monthReport" returnType="ArrayList&lt;ProductFlowReport&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Staff" package="inventorySystem" visibility="public" xPosition="1900.0" yPosition="1000.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="int" name="userId"/>
+          <Argument type="String" name="userName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="canAddData" returnType="boolean" visibility="public"/>
+        <Method name="canReport" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Totals" package="inventorySystem" visibility="public" xPosition="550.0" yPosition="1779.0">
+      <Fields>
+        <Field name="product" type="Product" visibility="private"/>
+        <Field name="quantity" type="Integer" visibility="private"/>
+        <Field name="cost" type="Double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Product" name="product"/>
+          <Argument type="Integer" name="quantity"/>
+          <Argument type="Double" name="cost"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getProduct" returnType="Product" visibility="public"/>
+        <Method name="setProduct" returnType="void" visibility="public">
+          <Argument type="Product" name="product"/>
+        </Method>
+        <Method name="getQuantity" returnType="Integer" visibility="public"/>
+        <Method name="setQuantity" returnType="void" visibility="public">
+          <Argument type="Integer" name="quantity"/>
+        </Method>
+        <Method name="getCost" returnType="Double" visibility="public"/>
+        <Method name="setCost" returnType="void" visibility="public">
+          <Argument type="Double" name="cost"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UserManagement" package="inventorySystem" visibility="public" xPosition="154.0" yPosition="692.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Connection" name="dbconn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="checkLogin" returnType="boolean" visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="passwordRaw"/>
+        </Method>
+        <Method name="login" returnType="User" visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="passwordRaw"/>
+        </Method>
+        <Method name="addUser" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="passwordRaw"/>
+          <Argument type="Boolean" name="isadmin"/>
+        </Method>
+        <Method name="passwordToHash" returnType="String" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="User" package="inventorySystem" visibility="public" xPosition="1363.0" yPosition="551.0">
+      <Methods>
+        <Method name="canAddData" returnType="boolean" visibility="package"/>
+        <Method name="canReport" returnType="boolean" visibility="package"/>
+        <Method name="getName" returnType="String" visibility="package"/>
+        <Method name="setName" returnType="void" visibility="package">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="package"/>
+        <Method name="setId" returnType="void" visibility="package">
+          <Argument type="int" name="id"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="inventorySystem.Totals" target="inventorySystem.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="inventorySystem.Staff" target="inventorySystem.User"/>
+    <UseRelation source="inventorySystem.Report" target="inventorySystem.Report" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="inventorySystem.ProductManagement" target="inventorySystem.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="loggedUser" source="inventorySystem.Execution" target="inventorySystem.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="inventorySystem.Report" target="inventorySystem.Totals" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="inventorySystem.UserManagement" target="inventorySystem.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="product" source="inventorySystem.Totals" target="inventorySystem.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="inventorySystem.ProductManagement" target="inventorySystem.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="inventorySystem.Admin" target="inventorySystem.User"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

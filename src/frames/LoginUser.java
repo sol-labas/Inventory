@@ -47,6 +47,7 @@ public class LoginUser extends javax.swing.JFrame {
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("User Login");
 
         jLabel1.setText("Nice to see you again! ");
 

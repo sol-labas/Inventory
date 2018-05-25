@@ -16,10 +16,19 @@ import javax.xml.bind.DatatypeConverter;
  * @author angel
  */
 public class UserManagement {
+    /**
+     * Database credentials
+     */
     static Connection conn = null;
     public UserManagement(Connection dbconn) {
         this.conn = dbconn;
     } 
+    /**
+     * Function checked if user exist in database and has correct password
+     * @param String name, 
+     * @param String passwordRaw
+     * @return  boolean
+     */
     public boolean checkLogin(String name, String passwordRaw) {
         try {    
             String password = passwordToHash(passwordRaw);
@@ -36,7 +45,12 @@ public class UserManagement {
         }
         return false;
     }
-    
+    /**
+     * Function login existing user
+     * @param String name 
+     * @param String passwordRaw
+     * @return  boolean
+     */
     public User login(String name, String passwordRaw) {
         try {    
             String password = passwordToHash(passwordRaw);
@@ -59,7 +73,13 @@ public class UserManagement {
         }
         return null;
     }
-    
+    /**
+     * Function add user
+     * @param String name 
+     * @param String passwordRaw
+     * @param Boolean isadmin
+     * @return void 
+     */
     public void addUser(String name, String passwordRaw, Boolean isadmin){
         try{
             Integer admin = (isadmin) ? 1 : 0;
@@ -75,6 +95,11 @@ public class UserManagement {
             ex.printStackTrace();
         }
     }
+    /**
+     * Function makes SHA1 digest of the password
+     * @param String password 
+     * @return String 
+     */
     public String passwordToHash(String password) {
         String hash = "";
         try {

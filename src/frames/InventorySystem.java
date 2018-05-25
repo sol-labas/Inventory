@@ -32,6 +32,9 @@ public class InventorySystem extends javax.swing.JFrame {
         bUser = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inventory System");
+
+        jPanel1.setToolTipText("");
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/frames/inventoryLogo.png"))); // NOI18N
         jLabel1.setText("jLabel1");

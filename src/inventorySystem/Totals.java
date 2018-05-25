@@ -33,7 +33,12 @@ public class Totals {
     public void setCost(Double cost) {
         this.cost = cost;
     }
-
+    /**
+     * Constructor
+     * @param Product product 
+     * @param Integer quantity
+     * @param Double cost
+     */
     public Totals(Product product, Integer quantity, Double cost) {
         this.product = product;
         this.quantity = quantity;

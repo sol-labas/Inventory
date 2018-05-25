@@ -8,7 +8,11 @@ package inventorySystem;
 public class Admin implements User {
     private String name;
     private int id;
-
+    /**
+     * Constructor
+     * @param int userId 
+     * @param String userName
+     */
     Admin(int userId, String userName) {
         id = userId;
         name = userName;

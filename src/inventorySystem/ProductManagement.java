@@ -17,10 +17,19 @@ import java.util.Date;
  * @author angel
  */
 public class ProductManagement {
+    /**
+     * Database credentials
+     */
     static Connection conn = null;
     public ProductManagement(Connection dbconn) {
         this.conn = dbconn;
     } 
+    
+    /**
+     * Function add new product to database
+     * @param String name 
+     * @return Product class
+     */
     public Product addProduct(String name){
         try{
             String sql = "INSERT INTO products (name) VALUES (?)";
@@ -47,6 +56,12 @@ public class ProductManagement {
         return null;
     }
     
+    /**
+     * Function received information about product from database
+     * @param Integer id 
+     * @return Product class
+     */
+    
     public Product getProductById(Integer id) {
         try {    
             String sql = "SELECT * FROM products WHERE id = ?";
@@ -63,6 +78,12 @@ public class ProductManagement {
         }
         return null;
     }
+    
+    /**
+     * Function received information about product from database
+     * @param String name 
+     * @return Product class
+     */
     public Product getProductByName(String name) {
         try {    
             String sql = "SELECT * FROM products WHERE name = ?";
@@ -79,7 +100,11 @@ public class ProductManagement {
         }
         return null;
     }
-    
+    /**
+     * Function received information about all products from database
+     * @param 
+     * @return HashMap<Integer, Product>
+     */
     public HashMap<Integer, Product> getProductList(){
         try {    
             String sql = "SELECT * FROM products";
@@ -98,6 +123,11 @@ public class ProductManagement {
         }
         return null;
     }
+    /**
+     * Function change information about product in database
+     * @param Product product, Integer quantity, Double cost, Date addDate, User user
+     * @return void
+     */
     public void changeProduct(Product product, Integer quantity, Double cost, Date addDate, User user){
         try{
             Timestamp timestamp = new Timestamp(addDate.getTime());

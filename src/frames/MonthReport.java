@@ -61,6 +61,7 @@ public class MonthReport extends javax.swing.JFrame {
         jButton1.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Monthly Report");
 
         jMonthReport.setEditable(false);
         jMonthReport.setColumns(20);

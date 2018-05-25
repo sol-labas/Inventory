@@ -58,7 +58,14 @@ public class ProductFlowReport {
     public void setCost(Double cost) {
         this.cost = cost;
     }
-
+    /**
+     * Constructor
+     * @param Date date 
+     * @param String product 
+     * @param Integer quantity 
+     * @param Double cost
+     * @paramString user 
+     */
     public ProductFlowReport(Date date, String product, Integer quantity, Double cost, String user) {
         this.date = date;
         this.product = product;
@@ -66,7 +73,10 @@ public class ProductFlowReport {
         this.cost = cost;
         this.user = user;
     }
-
+    /**
+     * Format date to String
+     * @param  
+     */
     public String getFormattedDate() {
         DateFormat dateFormatter = DateFormat.getDateInstance(DateFormat.SHORT);
         return dateFormatter.format(this.date);

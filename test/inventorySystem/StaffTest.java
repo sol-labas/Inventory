@@ -93,7 +93,7 @@ public class StaffTest {
     public void testSetId() {
         System.out.println("setId");
         int id = 3;
-         Staff instance = new Staff(3, "Maya");
+        Staff instance = new Staff(3, "Maya");
         instance.setId(id);
         int result = instance.getId();
         assertEquals(id, result);

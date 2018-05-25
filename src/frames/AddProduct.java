@@ -46,6 +46,7 @@ public class AddProduct extends javax.swing.JFrame {
         jReturn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Add Product");
 
         jLabel1.setText("Enter Product Name");
 

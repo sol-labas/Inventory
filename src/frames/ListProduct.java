@@ -49,6 +49,7 @@ public class ListProduct extends javax.swing.JFrame {
         jReturn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("List Of All Products");
 
         jList.setEditable(false);
         jList.setColumns(20);

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package inventorySystem;
 
 /**
@@ -12,12 +8,15 @@ package inventorySystem;
 public class Staff implements User {
     private String name;
     private int id;
-
+    /**
+     * Constructor
+     * @param int userId 
+     * @param String userName
+     */
     Staff(int userId, String userName) {
         id = userId;
         name = userName;
     }
-
     public String getName() {
         return name;
     }

@@ -24,7 +24,11 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
-
+    /**
+     * Constructor
+     * @param Integer id 
+     * @param String name
+     */
     public Product(Integer id, String name) {
         this.id = id;
         this.name = name;

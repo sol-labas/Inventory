@@ -20,10 +20,18 @@ import java.util.TreeSet;
  * @author angel
  */
 public class Report {
+    /**
+     * Database credentials
+     */
     static Connection conn = null;
     public Report(Connection dbconn) {
         this.conn = dbconn;
     } 
+     /**
+     * Function received information about all products and action from database
+     * @param 
+     * @return ArrayList<Totals>
+     */
     public ArrayList<Totals> allTotals(){
         try {    
             String sql = "SELECT p.id, p.name, SUM(pf.quantity) AS sum_quantity, SUM(pf.cost) AS sum_cost FROM products p"
@@ -46,6 +54,11 @@ public class Report {
         }
         return null;
     }
+    /**
+     * Function received information about all products and action from database on weekly basis
+     * @param 
+     * @return ArrayList<ProductFlowReport>
+     */
     public ArrayList<ProductFlowReport> weekReport(){
         try {    
             String sql = "SELECT pf.id, p.name AS product_name, pf.quantity, pf.cost, pf.date, u.name AS user_name FROM product_flow pf"
@@ -75,6 +88,11 @@ public class Report {
         }
         return null;
     }
+    /**
+     * Function received information about all products and action from database on monthly basis
+     * @param 
+     * @return ArrayList<ProductFlowReport>
+     */
     public ArrayList<ProductFlowReport>monthReport(){
         try {    
             String sql = "SELECT pf.id, p.name AS product_name, pf.quantity, pf.cost, pf.date, u.name AS user_name FROM product_flow pf"
